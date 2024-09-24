@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="message-container">
+        <p class="fade-in">Tungkol naman about dun sa mg mg natin, salamat dahil nakamit natin ang goal na immortal ng magkasama, ngunit hindi nakamit ang mg, mayroon pa naman oras para makamit yan.<br><br>
+
+        Salamat dahil nag effort ka na mag laro and nag stay kapa sa terminal para lang talaga umabot sa mg, tapos nag puyat pa tayo halos hanggang 3am.<br><br>
+
+        Hindi nga naabot ang mg pero okay lang, dahil nakita ko ang efforts natin para lang makamit yon and that's a sign na malakas tayo na couple, nag eeffort tayo and gumagawa tayo ng paraan.<br><br>
+
+        Salamat din dahil nag absent ka noong sunday para lang bumawi at mag bebe time at mapatunayan na hindi night shift, yung mga efforts na yun ang talagang pumapasok sa puso't isipan ko na ikaw na ang tamang babae para saakin.<br><br>
+        
+        Road to 100 months bby hahahaha, loveyou mahal na mahal kita.</p>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        let delay = 0;
+        fadeInElements.forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transition = 'opacity 1.5s ease-in';
+            delay += 2;
+            setTimeout(() => {
+                el.style.opacity = 1;
+            }, delay * 1000);
+        });
+    </script>
+</body>
+</html>
