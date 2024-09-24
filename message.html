@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message - 16 Months of Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="message-container">
+        <p class="fade-in">Happy 16th monthsary mahal ko, 16 months na tayo and as always thankful ako dahil milestone na to, naabot natin ito, nakamit natin ito ng magkasama ng tayong dalawa lang.<br><br>
+
+        May mga away tayo and tampo na nangyari pero inuna natin ang communication kaya natin nalampasan ang mga hamon at pagsubok na iyon, yan ang dahilan kung bakit tayo matatag, yan ang dahilan kung bakit mas matibay pa tayo kesa sa kathniel hahahahaha.<br><br>
+
+        Sa mga misunderstandings and misinterpretations na yan, tamang communication lang ang katapat and nagagawa natin.<br><br>
+
+        Thankful ako dahil may partner ako na nakikipag communicate and caring and understanding and of course loving.<br><br>
+
+        Ituloy lang natin to, maaabot natin ang mga goals and future plans natin together, dami pa naman nating magandang goals tsaka plans hahaha, patayo ng malaking bahay, sine, dates, basta basta marami.</p>
+
+        <button class="next-button" onclick="window.location.href='message-page2.html'">Next</button>
+    </div>
+
+    <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        let delay = 0;
+        fadeInElements.forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transition = 'opacity 1.5s ease-in';
+            delay += 2;
+            setTimeout(() => {
+                el.style.opacity = 1;
+            }, delay * 1000);
+        });
+    </script>
+</body>
+</html>
