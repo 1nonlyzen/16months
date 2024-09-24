@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tula - 16 Months of Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="poem-container">
+        <h1>Sixteen months of you and me</h1>
+        <p class="fade-in">You and me, forever bound.<br>
+        By gracious sacred love we found.<br>
+        Everything stays by our side.</p>
+
+        <p class="fade-in">In every moment, I find my place.<br>
+        Each day with you, a perfect rhyme.<br>
+        16 months, a dance in time.<br>
+        Your laughter, love, your gentle grace.<br>
+        My heart beats for you at ease.</p>
+
+        <p class="fade-in">In endless love, there is pain,<br>
+        But pain there is, we sought to fix.<br>
+        In every fix, the more we love,<br>
+        And rise above the stormy mix.</p>
+
+        <p class="fade-in">For in each tear, we find our way,<br>
+        Growing closer every day.<br>
+        Through every trial, our love will stay,<br>
+        A bond unbroken, come what may.</p>
+
+        <p class="fade-in">In every glance, in every touch,<br>
+        You’ve shown me love that means so much.<br>
+        Sixteen months, and still I see,<br>
+        Forever starts with you and me.</p>
+
+        <button class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        let delay = 0;
+        fadeInElements.forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transition = 'opacity 1.5s ease-in';
+            delay += 2;
+            setTimeout(() => {
+                el.style.opacity = 1;
+            }, delay * 1000);
+        });
+    </script>
+</body>
+</html>
